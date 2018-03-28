@@ -64,7 +64,8 @@ labels_out.write('word\tcount\n')
 
 for i, wd in enumerate(vocab):
     if i % 100 == 0:
-        sys.stderr.write('\rDump vocabulary: %d/%d (%.2f%%)' % (i+1, num_rows, 100.0 * (i+1) / num_rows))
+        sys.stderr.write('\rDump vocabulary: %d/%d (%.2f%%)' % \
+            (i+1, num_rows, 100.0 * (i+1) / num_rows))
 
     floatvals = w2vmodel[wd].tolist()
     assert dim == len(floatvals)
