@@ -1,3 +1,3 @@
-# nn-nlp-skeleton
+# NN-NLP-Skeleton
 
-## Synchronized queue for data input
+Collection of utilities for boilerplate tasks such as preprocessing text and handling word embeddings.
